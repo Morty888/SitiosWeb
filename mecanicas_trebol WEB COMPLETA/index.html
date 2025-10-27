@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecánicas Trébol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+</head>
+
+<body>
+
+  <div id="fondo"></div>
+
+  <header>
+    <div class="logo-container">
+      <h1 id="maquina"></h1>
+    </div>
+    <div class="logo-trebol">
+      <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+    </div>
+    <button class="hamburguesa" id="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+        <div class="dropdown-content">
+          <a href="instalacionesGas.html">Instalaciones de Gas</a>
+          <a href="fontaneria.html">Fontanería</a>
+          <a href="mantenimiento.html">Mantenimiento Integral</a>
+          <a href="climatizacion.html">Climatización</a>
+        </div>
+      </div>
+      <a href="contacto.html">Contacto</a>
+      <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+    </nav>
+  </header>
+  
+
+
+  
+<br><br>
+
+  <section id="inicio" class="seccion inicio-flex">
+    <div class="bloque-inicio">
+
+      <img src="imagenes/Inicio1.jpg" alt="Instalaciones" class="img-inicio" />
+    
+      <div class="texto-inicio">
+        <h1 class="trebol" style="font-size: 1cm">TRÉBOL. Mecánicas y Servicios SL</h1>
+        <p class="texto-degradado2">Soluciones confiables a tu medida.</p>
+        <p class="texto-degradado2">Expertos en instalaciones de gas, fontanería, calefacción, climatización, ventilación y mantenimientos integrales en Madrid.</p>
+      </div>
+    
+    </div>
+    
+    <div class="separador"></div>
+    
+    <div class="bloque-inicio reverse">
+      <div class="texto-inicio datos-contacto">
+        <div class="fila-contacto">
+          <strong>Localización:</strong> <span>Paseo de la Castellana 12, 6º D. 28046 - MADRID</span>
+        </div>
+        <div class="fila-contacto">
+          <strong>Horario de Oficina:</strong> <span>De 09:00h a 18:00h</span>
+        </div>
+        <div class="fila-contacto">
+          <strong>Teléfonos de contacto:</strong> <span>635 553 779 | 692 35 86 16</span>
+        </div>
+        <div class="fila-contacto">
+          <strong>Email:</strong> <span>direccion.obras.tsm@gmail.com</span>
+        </div>
+      </div>
+      <img src="imagenes/Inicio2.jpg" alt="Oficinas" class="img-inicio" />
+    </div> 
+  </section>
+
+
+  <section class="seccion valores">
+    <fieldset class="fieldset">
+      <h2>Nuestros valores</h2> <br><br>
+      
+      <div class="valores-contenedor">
+        <div class="valor">
+          <h3>Calidad</h3>
+          <p>Garantizamos trabajos de calidad en todos nuestros servicios.</p>
+       </div>
+       <div class="valor">
+          <h3>Integridad</h3>
+          <p>Actuamos con honestidad y transparencia en nuestro día a día.</p>
+       </div>
+       <div class="valor">
+          <h3>Precio</h3>
+          <p>Ofrecemos precios competitivos con garantía de calidad.</p>
+       </div>
+       <div class="valor">
+          <h3>Servicio al Cliente</h3>
+          <p>Tu satisfacción es nuestra prioridad máxima.</p>
+       </div>
+       <div class="valor">
+          <h3>Innovación</h3>
+          <p>Aplicamos ideas frescas para ofrecer siempre las mejores soluciones.</p>
+       </div>
+     </div>
+  </fieldset>
+  </section>
+
+
+  <section id="servicios" class="seccion">
+    
+    <fieldset class="fieldset">
+    <h2>Nuestros Servicios</h2><br>
+  </fieldset>
+  
+    <div class="carrusel-servicios">
+      <div class="carrusel-track">
+        <div class="grupo">
+          <div class="servicio">
+            <a href="instalacionesGas.html"><img src="imagenes/Instalaciones_gas.jpg" alt="Instalaciones de Gas" />
+            <p>Instalaciones de Gas</p></a>
+          </div>
+          <div class="servicio">
+            <a href="fontaneria.html"><img src="imagenes/fontaneria.jpg" alt="Fontanería" />
+            <p>Fontanería</p></a>
+          </div>
+          <div class="servicio">
+          <a href="mantenimiento.html"><img src="imagenes/mantenimiento.jpg" alt="Mantenimiento" />
+            <p>Mantenimientos</p></a>
+          </div>
+          <div class="servicio">
+            <a href="climatizacion.html"><img src="imagenes/climatizacion.jpg" alt="Climatización" />
+            <p>Climatización</p></a>
+          </div>
+        </div>
+      
+
+        <!-- Grupo duplicado para el bucle perfecto -->
+        <div class="grupo">
+          <div class="servicio">
+            <a href="instalacionesGas.html"><img src="imagenes/Instalaciones_gas.jpg" alt="Instalaciones de Gas" />
+              <p>Instalaciones de Gas</p></a>
+            </div>
+            <div class="servicio">
+              <a href="fontaneria.html"><img src="imagenes/fontaneria.jpg" alt="Fontanería" />
+              <p>Fontanería</p></a>
+            </div>
+            <div class="servicio">
+            <a href="mantenimiento.html"><img src="imagenes/mantenimiento.jpg" alt="Mantenimiento" />
+              <p>Mantenimientos</p></a>
+            </div>
+            <div class="servicio">
+              <a href="climatizacion.html"><img src="imagenes/climatizacion.jpg" alt="Climatización" />
+              <p>Climatización</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+
+  <div class="whatsapp">
+    <h1>Contacta con nosotros</h1>
+     <a href="https://wa.me/34692358616" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <br><br><br><br>
+  
+  
+
+   <footer>
+    <p id="fecha"></p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-google"></i></a> <!-- cambiar la dirección #-->
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="politicas">
+      <p>Sitio Web creado por <a href="https://www.borjacode.com">© BorjaCode Studio</a>Todos los derechos reservados.</p>
+    </div>
+    <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+
+    <div class="politicas">
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="cookies.html">Política de Cookies</a>
+      <a href="avisolegal.html">Aviso Legal</a>
+    </div>
+  </footer>
+
+  <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

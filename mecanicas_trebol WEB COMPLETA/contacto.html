@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - Mecánicas Trébol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+</head>
+
+<body>
+
+  <div id="fondo"></div>
+
+  <header>
+    <div class="logo-container">
+      <h1 id="maquina"></h1>
+    </div>
+    <div class="logo-trebol">
+      <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+    </div>
+
+    <button class="hamburguesa" id="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+        <div class="dropdown-content">
+          <a href="instalacionesGas.html">Instalaciones de Gas</a>
+          <a href="fontaneria.html">Fontanería</a>
+          <a href="mantenimiento.html">Mantenimiento Integral</a>
+          <a href="climatizacion.html">Climatización</a>
+        </div>
+      </div>
+      <a href="contacto.html">Contacto</a>
+      <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+    </nav>
+  </header>
+
+  <section id="contacto" class="seccion">
+    <fieldset class="fieldset">
+      <h2>Contacto</h2>
+      <br>
+      <form action="enviar.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="apellidos" placeholder="Apellidos" required />
+        <!-- Validación básica HTML para teléfono -->
+        <input type="tel" name="telefono" placeholder="Teléfono" pattern="^[0-9]{9}$" inputmode="numeric" maxlength="9"
+          minlength="9" required />
+        <textarea name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+        <!-- Campos trampa oculto -->
+        <input type="text" name="empresa" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="submit" value="Enviar" class="boton-enviar" /><br><br>
+      </form>
+    </fieldset>
+    <br><br>
+    <div class="whatsapp">
+      <h1>O escríbenos un Whatsapp</h1>
+      <a href="https://wa.me/34692358616" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <br><br><br>
+  </section>
+
+
+  <footer>
+    <p id="fecha"></p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-google"></i></a> <!-- cambiar la dirección #-->
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="politicas">
+      <p>Sitio Web creado por <a href="https://www.borjacode.com">© BorjaCode Studio</a>Todos los derechos reservados.
+      </p>
+    </div>
+    <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+
+    <div class="politicas">
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="cookies.html">Política de Cookies</a>
+      <a href="avisolegal.html">Aviso Legal</a>
+    </div>
+  </footer>
+
+  <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

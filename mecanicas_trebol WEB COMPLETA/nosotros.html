@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Conoce a Mecánicas Trébol, expertos en fontanería y climatización en Madrid. Profesionales con años de experiencia comprometidos con calidad y confianza.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nosotros - Mecánicas Trébol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+  <style>
+  
+
+  </style>
+</head>
+
+<body>
+
+  <div id="fondo"></div>
+
+  <header>
+    <div class="logo-container">
+      <h1 id="maquina"></h1>
+    </div>
+    <div class="logo-trebol">
+      <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+    </div>
+  
+    <button class="hamburguesa" id="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+        <div class="dropdown-content">
+          <a href="instalacionesGas.html">Instalaciones de Gas</a>
+          <a href="fontaneria.html">Fontanería</a>
+          <a href="mantenimiento.html">Mantenimiento Integral</a>
+          <a href="climatizacion.html">Climatización</a>
+        </div>
+      </div>
+      <a href="contacto.html">Contacto</a>
+      <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+    </nav>
+  </header>
+
+
+  <!-- CONTENIDO -->
+  <section class="seccion quienes-somos">
+    <div class="container">
+      <fieldset class="quienes-somos-fieldset">
+      <h2>Sobre Nosotros</h2><br>
+
+      <!-- Primer parrafo fieldset con texto a la izquierda y foto a la derecha -->
+      <fieldset class="quienes-somos-fieldset">
+        <div class="texto-imagen">
+          <div class="texto">
+            
+            <p class="texto-degradado">
+              Somos Mecánicas Trébol, una empresa con años de experiencia en fontanería, climatización y mantenimiento integral. 
+              Nuestro compromiso es ofrecer soluciones de alta calidad, adaptadas a las necesidades específicas de nuestros clientes.
+            </p>
+          </div>
+          <div class="imagen">
+            <img src="imagenes/fondo.jpg" alt="Foto de trabajo" class="img-responsive">
+          </div>
+        </div>
+      </fieldset>
+
+<!-- Segundo parrafo sin Fieldset -->
+        <div class="texto1">
+          <p class="texto-degradado2">
+            Ofrecemos nuestros servicios en formato de nuevas instalaciones, de mantenimiento y reparaciones, 
+            siempre con unos precios asequibles y de mercado. Lo que nos diferencia del resto es nuestro compromiso a un precio razonable, 
+            nos responsabilizamos de que las instalaciones salgan bien, en plazo y con garantía en el tiempo. Todo ello lo atesora nuestra 
+            experiencia en el sector y nuestro personal.
+          </p>
+        </div>
+        <div class="imagen">
+        </div>
+  
+      <!-- tercer parrafo fieldset con foto a la izquierda y texto a la derecha -->
+      <fieldset class="quienes-somos-fieldset">
+        <div class="texto-imagen">
+          <div class="imagen">
+            <img src="imagenes/fondo1.jpg" alt="Equipo de trabajo" class="img-responsive">
+          </div>
+          <div class="texto">
+            <p class="texto-degradado">
+              Estamos enfocados a clientes que tienen un volumen de trabajo estable durante el año, a grandes clientes que poseen gran volumen 
+              de trabajo y a clientes particulares que quieren hacer instalaciones que duren toda la vida.
+            </p>
+          </div>
+        </div>
+      </fieldset>
+    </fieldset>
+    </div>
+  </section>
+    <!-- CONTENIDO -->
+    
+  <div class="whatsapp">
+    <h1>Contacta con nosotros</h1>
+     <a href="https://wa.me/34692358616" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <br><br><br><br>
+
+  
+  <footer>
+    <p id="fecha"></p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-google"></i></a>  <!-- cambiar la dirección #-->
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="politicas">
+    <p>Sitio Web creado por <a href="https://www.borjacode.com">© BorjaCode Studio</a>Todos los derechos reservados.</p>
+    </div>
+    <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+    
+    <div class="politicas">
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="cookies.html">Política de Cookies</a> 
+      <a href="avisolegal.html">Aviso Legal</a>
+    </div>
+  </footer>
+
+  <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

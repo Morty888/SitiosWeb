@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Descubre los servicios de Mecánicas Trébol: fontanería, instalación de gas, calefacción y climatización. Soluciones integrales para hogares y comunidades en Madrid.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicio de Instalaciones de Gas - Mecánicas Trébol</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+</head>
+
+<body>
+
+  <div id="fondo"></div>
+
+  <!-- CABECERA -->
+  <header>
+    <div class="logo-container">
+      <h1 id="maquina"></h1>
+    </div>
+    <div class="logo-trebol">
+      <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+    </div>
+
+    <button class="hamburguesa" id="hamburguesa">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Sobre nosotros</a>
+      <div class="dropdown">
+        <a href="#servicios" class="dropbtn">Servicios ▾</a>
+        <div class="dropdown-content">
+          <a href="instalacionesGas.html">Instalaciones de Gas</a>
+          <a href="fontaneria.html">Fontanería</a>
+          <a href="mantenimiento.html">Mantenimiento Integral</a>
+          <a href="climatizacion.html">Climatización</a>
+        </div>
+      </div>
+      <a href="contacto.html">Contacto</a>
+      <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <section id="instalacionesGas" class="seccion">
+    <div class="container">
+      <fieldset class="fieldset">
+        <h2>Instalaciones de gas</h2><br>
+
+        <!-- Primer parrafo  con texto a la izquierda y foto a la derecha -->
+        <fieldset class="quienes-somos-fieldset">
+          <div class="texto-imagen">
+            <div class="texto">
+
+              <p style="text-align: center;" class="texto-degradado">
+
+                EN MECÁNICAS TRÉBOL, OFRECEMOS SERVICIOS PROFESIONALES DE INSTALACION DE SISTEMAS DE GAS PARA HOGARES,
+                EMPRESAS Y COMUNIDADES DE PROPIETARIOS.
+              </p>
+            </div>
+            <div class="imagen">
+              <img src="imagenes/Instalaciones_gas.jpg" alt="Foto de trabajo" class="img-responsive">
+            </div>
+          </div>
+          <!-- Segundo parrafo sin Fieldset -->
+          <div class="texto1">
+            <p class="texto-degradado2">
+              Ofrecemos nuestros servicios en formato de nuevas instalaciones, de mantenimiento y reparaciones,
+              siempre con unos precios asequibles y de mercado. Lo que nos diferencia del resto es nuestro compromiso a
+              un precio razonable,
+              nos responsabilizamos de que las instalaciones salgan bien, en plazo y con garantía en el tiempo. Todo
+              ello lo atesora nuestra
+              experiencia en el sector y nuestro personal.
+            </p>
+          </div>
+          <div class="imagen">
+          </div>
+            
+        </fieldset>
+        <br>
+        <div class="boton-contacto-container">
+          <a href="contacto.html" class="boton-contacto">SOLICITA TU PRESUPUESTO</a>
+        </div>
+        <br>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p id="fecha"></p>
+    <div class="redes">
+      <a href="#"><i class="fab fa-google"></i></a>  <!-- cambiar la dirección #-->
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="politicas">
+    <p>Sitio Web creado por <a href="https://www.borjacode.com">© BorjaCode Studio</a>Todos los derechos reservados.</p>
+    </div>
+    <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+    
+    <div class="politicas">
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="cookies.html">Política de Cookies</a> 
+      <a href="avisolegal.html">Aviso Legal</a>
+    </div>
+  </footer>
+
+  <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

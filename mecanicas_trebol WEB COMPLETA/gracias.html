@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensaje enviado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+    <style>
+      body{
+        text-align: center;
+      }
+        h1,
+        h2 {
+            color: #005b5c;
+        }
+
+        b {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="fondo"></div>
+
+    <header>
+        <div class="logo-container">
+            <h1 id="maquina"></h1>
+        </div>
+        <div class="logo-trebol">
+            <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+        </div>
+
+        <button class="hamburguesa" id="hamburguesa">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+            <div class="dropdown">
+                <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                <div class="dropdown-content">
+                    <a href="instalacionesGas.html">Instalaciones de Gas</a>
+                    <a href="fontaneria.html">Fontanería</a>
+                    <a href="mantenimiento.html">Mantenimiento Integral</a>
+                    <a href="climatizacion.html">Climatización</a>
+                </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+            <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+        </nav>
+    </header>
+
+</BR><BR></BR></BR></BR>
+    <section>
+      <h1>¡Gracias por contactarnos!</h1>
+      <p><strong>Tu mensaje ha sido enviado correctamente. Te responderemos pronto.</strong></p>
+      <a href="index.html">Volver al inicio</a>
+      <br><br>
+    </section>
+<BR><BR><BR></BR></BR></BR><BR></BR></BR>
+
+    <footer>
+        <p id="fecha"></p>
+        <div class="redes">
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; Mecánicas Trébol. Todos los derechos reservados.</p>
+        <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+
+        <div class="politicas">
+            <a href="privacidad.html">Política de Privacidad</a>
+            <a href="cookies.html">Política de Cookies</a>
+            <a href="avisolegal.html">Aviso Legal</a>
+        </div>
+    </footer>
+
+    <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

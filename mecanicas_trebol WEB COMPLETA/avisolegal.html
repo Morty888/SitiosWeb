@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de cookies - Mecánicas Trébol</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" type="image/jpeg" href="imagenes/LOGO.jpeg" />
+    <style>
+        h1,
+        h2 {
+            color: #005b5c;
+        }
+
+        b {
+            display: block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fondo"></div>
+
+    <header>
+        <div class="logo-container">
+            <h1 id="maquina"></h1>
+        </div>
+        <div class="logo-trebol">
+            <img id="logo" src="imagenes/LOGO.jpeg" alt="Logo Mecánicas Trébol" />
+        </div>
+
+        <button class="hamburguesa" id="hamburguesa">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Sobre nosotros</a>
+            <div class="dropdown">
+                <a href="#servicios" class="dropbtn">Servicios ▾</a>
+                <div class="dropdown-content">
+                    <a href="instalacionesGas.html">Instalaciones de Gas</a>
+                    <a href="fontaneria.html">Fontanería</a>
+                    <a href="mantenimiento.html">Mantenimiento Integral</a>
+                    <a href="climatizacion.html">Climatización</a>
+                </div>
+            </div>
+            <a href="contacto.html">Contacto</a>
+            <button id="bton-oscuro" onclick="cambiarModo()">🌓</button>
+        </nav>
+    </header>
+
+    <section class="seccion quienes-somos">
+        <div class="container">
+            <fieldset class="quienes-somos-fieldset">
+                <h2>Aviso legal</h2><br>
+                <h3>I. Información general</h3>
+                <p>
+                    En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad
+                    de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación
+                    los siguientes datos de información general de este sitio web:
+                </p>
+                <p>
+                    La titularidad de este sitio web, la ostenta: <strong>MECÁNICAS TRÉBOL, S.L.</strong>, con NIF: <strong>B16442212</strong>.
+                </p>
+                <p>
+                    <strong>Dirección:</strong> Paseo de la Castellana 12 6º D, 28046 Madrid<br>
+                    <strong>Teléfono:</strong> 624035429<br>
+                    <strong>Emails:</strong> obras.tsm@gmail.com / direccion.obras.tsm@gmail.com
+                </p>
+
+                <h3>II. Términos y condiciones generales de uso</h3>
+                <p>
+                    El presente Aviso Legal regula el acceso, navegación y uso del Sitio Web, así como las
+                    responsabilidades derivadas de la utilización de sus contenidos como textos, gráficos, dibujos,
+                    diseños, códigos, software, fotografías, música, vídeos, sonidos, bases de datos, imágenes,
+                    expresiones e informaciones, así como cualquier otra creación protegida por las leyes nacionales y
+                    tratados internacionales sobre propiedad intelectual e industrial.
+                </p>
+                <p>
+                    El acceso al Sitio Web tiene carácter libre y gratuito para los Usuarios, sin perjuicio del coste de
+                    conexión a través de la red de telecomunicaciones suministrado por el proveedor contratado por los
+                    usuarios.
+                </p>
+                <p>
+                    El acceso, navegación y uso del Sitio Web otorga la condición de Usuario, por lo que se aceptan
+                    desde dicho acceso todas las condiciones aquí establecidas sin reservas. Si el Usuario no está de
+                    acuerdo con las mismas, deberá abstenerse de acceder o utilizar el sitio web.
+                </p>
+                <p>
+                    El Usuario se compromete a hacer un uso adecuado de los contenidos y servicios ofrecidos por el
+                    Sitio Web y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe, el
+                    orden público, la ley o las presentes Condiciones.
+                </p>
+
+                <h3>III. Acceso y navegación en el sitio web: exclusión de garantías y responsabilidad</h3>
+                <p>
+                    MECÁNICAS TRÉBOL no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los
+                    contenidos o servicios. Tampoco garantiza la ausencia de errores en dichos contenidos ni la ausencia
+                    de virus u otros elementos dañinos.
+                </p>
+                <p>
+                    MECÁNICAS TRÉBOL no se responsabiliza de los daños que pudieran derivarse del acceso o uso del
+                    Sitio Web por parte de los usuarios, incluyendo daños a sistemas informáticos o pérdida de datos.
+                </p>
+
+                <h3>IV. Política de enlaces</h3>
+                <p>
+                    Este Sitio Web puede contener enlaces a páginas de terceros. Estos enlaces se proporcionan
+                    únicamente para la conveniencia del Usuario y no implican ningún tipo de relación con los sitios
+                    enlazados ni responsabilidad alguna sobre sus contenidos o servicios.
+                </p>
+                <p>
+                    Queda prohibida la reproducción total o parcial de los contenidos del Sitio Web sin autorización
+                    expresa de MECÁNICAS TRÉBOL, así como establecer enlaces que impliquen manifestaciones falsas,
+                    inexactas o incorrectas sobre el Sitio Web o sus servicios.
+                </p>
+
+                <h3>V. Propiedad intelectual e industrial</h3>
+                <p>
+                    MECÁNICAS TRÉBOL es titular de los derechos de propiedad intelectual e industrial del Sitio Web
+                    y de todos los elementos que lo integran. El Usuario puede visualizar, imprimir o almacenar los
+                    elementos del Sitio Web únicamente para su uso personal y privado.
+                </p>
+                <p>
+                    Queda prohibida su utilización con fines comerciales, así como la modificación, alteración o
+                    eliminación de cualquier elemento de protección o sistema de seguridad.
+                </p>
+                <p>
+                    En caso de que el Usuario considere que alguno de los contenidos del Sitio Web vulnera sus derechos
+                    de propiedad intelectual, deberá comunicarlo de forma inmediata al correo electrónico proporcionado
+                    en el apartado de Información General.
+                </p>
+
+                <h3>VI. Acciones legales, legislación aplicable y jurisdicción</h3>
+                <p>
+                    MECÁNICAS TRÉBOL se reserva el derecho a ejercer las acciones legales que correspondan por el
+                    uso indebido del Sitio Web o por el incumplimiento de estas Condiciones.
+                </p>
+                <p>
+                    La relación entre el Usuario y MECÁNICAS TRÉBOL se regirá por la normativa vigente en el
+                    territorio español. En caso de controversia, las partes se someterán a los juzgados y tribunales
+                    competentes conforme a derecho.
+                </p>
+
+
+            </fieldset>
+        </div>
+    </section>
+
+
+    <footer>
+        <p id="fecha"></p>
+        <div class="redes">
+            <a href="#"><i class="fab fa-google"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>&copy; Mecánicas Trébol. Todos los derechos reservados.</p>
+        <hr style="margin: 2rem auto; width: 80%; border: 1px solid #ffffff80;" />
+
+        <div class="politicas">
+            <a href="privacidad.html">Política de Privacidad</a>
+            <a href="cookies.html">Política de Cookies</a>
+            <a href="avisolegal.html">Aviso Legal</a>
+        </div>
+    </footer>
+
+    <button id="btn-arriba" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
